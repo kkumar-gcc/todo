@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS tasks (
+     id INTEGER PRIMARY KEY AUTOINCREMENT,
+     title TEXT NOT NULL,
+     status INTEGER NOT NULL DEFAULT 1,
+     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+     completed_at DATETIME,
+     priority INTEGER NOT NULL DEFAULT 1,
+     tags TEXT
+);
