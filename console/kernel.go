@@ -25,6 +25,9 @@ func (kernel *Kernel) Commands() []console.Command {
 		&commands.DeleteTaskCommand{
 			TaskService: taskService,
 		},
+		&commands.UpdateTaskCommand{
+			TaskService: taskService,
+		},
 		&commands.InitCommand{},
 	}
 }

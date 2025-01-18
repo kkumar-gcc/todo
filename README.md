@@ -21,7 +21,7 @@ TODO is a command-line tool that helps you to create, manage, and track your to-
 go install github.com/kkumar-gcc/todo@latest
 ```
 
-## Setup the Application
+## Set up the Application
 
 To set up the application, run the following command:
 
