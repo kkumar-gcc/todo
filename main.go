@@ -15,12 +15,12 @@ func main() {
 	usage := "TODO"
 	usageText := "todo [global options] command [command options] [arguments...]"
 
-	cliApp := goravelconsole.NewApplication(name, usage, usageText, constants.Version, false)
+	cli := goravelconsole.NewApplication(name, usage, usageText, constants.Version, false)
 
 	kernel := &console.Kernel{}
 
-	cliApp.Register(kernel.Commands())
-	if err := cliApp.Run(os.Args, false); err != nil {
+	cli.Register(kernel.Commands())
+	if err := cli.Run(os.Args, false); err != nil {
 		color.Red().Println(err)
 	}
 }
